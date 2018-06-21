@@ -1,4 +1,4 @@
-# Search-function-using-Lucene.net
+# Search function using Lucene.net
 Search text within web pages and files including pdf, docx and txt of a project using Lucene.net in a ASP.NET MVC project.
 
 Packages used (you can install into your project through NuGet Package Manager)
@@ -19,4 +19,7 @@ In this project
 - Displaying prevew content
 - Linking search result to the reletated document/web page
 
-P.S. I've used Visual Studio 2017
+It is a fully functional and tested web project, if you would like to see how it works then add it into your project. You can pass search text as "test" to see the result (as it already has index file).
+Try to upload some pdf and docx (note: this project is only indexing ".docx" version of word file format for now) file and then search the word from those files.
+
+P.S. I've used Visual Studio 2017.
