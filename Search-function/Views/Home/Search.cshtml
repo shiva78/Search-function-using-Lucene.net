@@ -1,0 +1,27 @@
+﻿@using Search_function.Models
+@{
+    ViewBag.Title = "Search";
+    var items = ViewBag.SearchResult;
+}
+
+<h3>Search</h3>
+<p><em>@ViewBag.SearchQuery</em></p>
+@if (items != null)
+{
+    <div class="clearfix">
+        @foreach (var item in items)
+        {
+        <p>
+            @if (item.FileName.Contains(".cshtml"))
+            {
+                <a href="@item.URL"><strong>@item.FileName</strong></a><br />
+            }
+            else
+            {
+                <a href="@item.URL" target="_blank"><strong>@item.FileName</strong></a><br />
+            }
+            @Html.Raw(item.Content)...
+        </p>
+        }
+    </div>
+}
